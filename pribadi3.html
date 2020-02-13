@@ -1,0 +1,51 @@
+<html>
+  <head>
+    <title>Membuat Validasi Form menggunakan JavaScript</title>
+    <style type="text/css" media="screen">
+      /* desktop */
+      .frmCnt {        
+        width: 30%;
+        margin: 30px auto;
+        background: darkturquoise;
+        padding: 30px;
+        border-radius: 8px;
+      }
+      .mt{
+        margin-top: 15px;
+      }
+      input {
+        width: 100%;
+      }
+      input:invalid:required {
+        border: 1px solid red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="frmCnt">
+      <form action="" id="main-form" method="post" enctype=""  onsubmit="return validateForm()">
+        <div class="mt"><label for="username"> Username </label></div><div>
+        <input type="text" name="username" id="username" value="" autofocus required>
+      </div>
+        <div class="mt"><label for="password"> Password </label></div><div>
+        <input type="password" name="password" id="password" value="" required>
+      </div>
+        <div class="mt"><label for="confirmPassword"> Confirm Password </label></div><div>
+        <input type="password" name="confirmPassword" id="confirmPassword" value="" required>
+      </div>
+        <div class="mt"><label for="email"> Email </label></div><div>
+        <input type="email" name="email" id="email" value="" required>
+      </div>
+        <div class="mt"><label for="confirmEmail"> Confirm Email </label></div><div>
+        <input type="email" name="confirmEmail" id="confirmEmail" value="" required>
+      </div>
+      <div class="mt">
+        <button type="submit" id="submitButton">
+          SUBMIT
+        </button>
+      </div>
+      </form>
+    </div>
+    <script src="script3.js"></script>
+  </body>
+</html>
